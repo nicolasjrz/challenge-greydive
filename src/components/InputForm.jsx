@@ -54,7 +54,9 @@ export const InputForm = ({ ...props }) => {
             required={required}
             className="  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-grey-600 focus:border-grey-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-grey-600 dark:focus:border-grey-600"
           >
-            <option disabled>Selecione un pais</option>
+            <option disabled selected value="">
+              Selecione un pais
+            </option>
             {options.map((elem) => (
               <option value={elem.value}> {elem.label} </option>
             ))}
